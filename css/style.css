@@ -15,7 +15,8 @@ body {
  
 
 .header {
-    background-color: #CA1212;  
+    background-color: #CA1212;   
+    margin-bottom: 32px;
 } 
  
 .header__inner{ 
@@ -91,7 +92,49 @@ body {
         color: #FFF;
         font-size: 15px; 
         
+    }  
+     
+    .menu__item--dropdown {
+        position: relative; 
+        display: block; 
+        cursor: pointer;
+    }  
+     
+    .dropdown {
+        list-style: none;
+        padding: 0;
+        margin: 0;
+        position: absolute;
+        top: 100%;
+        left: 0;  
+        width: 150px;
+        background-color: #CA1212; 
+        box-shadow: 0 8px 16px rgba(0,0,0,0.2); 
+        display: none; 
     } 
+     
+    .dropdown-decor{ 
+        position: absolute;
+        top: 7px;
+        right: -18px;
+    }
+    
+    .dropdown__item {
+        width: 100%;
+    }
+    
+    .dropdown__link {
+        text-decoration: none;
+        color: #FFF; 
+        display: block;
+        padding: 10px; 
+        cursor:pointer;
+    }
+    
+    .menu__item--dropdown:hover .dropdown {
+        display: block; 
+    }
+    
      
     .header__search-wrapper{ 
         position: relative; 
@@ -108,7 +151,17 @@ body {
         padding: 18px 14px 18px 47px; 
         background: transparent; 
         color:#FFF;
-    }  
+    }   
+     
+    .header__search-input:focus {
+        border: 3px solid #FFF;  
+        outline: none; 
+    } 
+     
+    .header__search-input::placeholder {
+        color: #FFFFFF; 
+        font-size: 14px;
+    }
      
     .header__search-btn{ 
         background-color: transparent; 
@@ -119,3 +172,30 @@ body {
         cursor: pointer;
     } 
      
+    /* breadcrumbs */
+     
+    .breadcrumbs__menu{ 
+        display: flex; 
+        align-items: center;
+    }  
+     
+    .breadcrumbs__item{
+        position: relative; 
+        width: 40px;
+    }
+     
+    .breadcrumbs__item + .breadcrumbs__item { 
+       margin-left: 31px; 
+    } 
+     
+    .breadcrumbs__link{ 
+        color: #494D55; 
+        font-weight: 600; 
+        font-size: 14px;
+    } 
+     
+    .breadcrumbs__decor{ 
+        position: absolute;
+        top: 5px;
+        left: 48px;
+    }
