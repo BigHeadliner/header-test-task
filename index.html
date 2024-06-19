@@ -50,20 +50,22 @@
                         <li class="menu__item">
                             <a href="#" class="menu__link">Weather</a>
                         </li> 
-                        <li class="menu__item menu__item--dropdown">
-                            <a href="#" class="menu__link">More</a>  
-                            <img class="dropdown-decor" src="img/dropdown-decor.svg" alt="decor">
+                        <li class="menu__item menu__item--dropdown"> 
+                            <div class="menu__item--wrapper">
+                                <a href="#" class="menu__link-dropdown">More</a>  
+                                <img class="dropdown-decor" src="img/dropdown-decor.svg" alt="decor">  
+                             </div>
                             <ul class="dropdown">
-                                <li class="dropdown__item"><a href="#" class="dropdown__link">Subitem 1</a></li>
-                                <li class="dropdown__item"><a href="#" class="dropdown__link">Subitem 2</a></li>
-                                <li class="dropdown__item"><a href="#" class="dropdown__link">Subitem 3</a></li>
+                                <li class="dropdown__item"><a href="#" class="menu__link">Subitem 1</a></li>
+                                <li class="dropdown__item"><a href="#" class="menu__link">Subitem 2</a></li>
+                                <li class="dropdown__item"><a href="#" class="menu__link">Subitem 3</a></li>
                             </ul>
                         </li>
                     </ul>
                 </nav> 
                  
-                <form class="header__search-wrapper"> 
-                    <input class="header__search-input" type="search" placeholder="Search"> 
+                <form class="header__search-wrapper" id="form-search"> 
+                    <input class="header__search-input" type="search" id="search-input" name="search-input" placeholder="Search"> 
                     <button class="header__search-btn" type="submit"> 
                         <img class="header__search-img" src="img/search.svg" alt="">
                     </button>
@@ -76,7 +78,7 @@
     <div class="breadcrumbs"> 
         <div class="container"> 
             <div class="breadcrumbs__inner"> 
-                <ul class="breadcrumbs__menu">
+                <ul class="breadcrumbs__menu"> 
                      <li class="breadcrumbs__item"><a class="breadcrumbs__link" href="#">Home</a><img class="breadcrumbs__decor" src="img/breadcrumbs-decor.svg" alt="decor" ></li> 
                      <li class="breadcrumbs__item"><a class="breadcrumbs__link" href="#">Blog</a><img class="breadcrumbs__decor" src="img/breadcrumbs-decor.svg" alt="decor" ></li> 
                      <li class="breadcrumbs__item"><a class="breadcrumbs__link" href="#">Blog</a></li>
@@ -84,7 +86,7 @@
             </div>
         </div>
     </div>
- <script src="js/script.js"></script>
+<script src="js/script.js"></script>
 </body>
 
 </html>

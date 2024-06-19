@@ -1,22 +1,24 @@
-$(function () {
-    const hamburger = document.getElementById('menu__btn')
-    const headerMenu = document.querySelectorAll('.menu__list')
-    const menuLinks = document.querySelectorAll('.menu__link')
+document.addEventListener('DOMContentLoaded', function() { 
 
-    hamburger.addEventListener('click', () => {
-        headerMenu.forEach(menu => {
-            menu.classList.toggle('menu__list--active');
-        });
-        hamburger.classList.toggle('menu__btn--open');
-    });
+      const hamburger = document.getElementById('menu__btn')
+      const headerMenu = document.querySelectorAll('.menu__list')
+      const menuLinks = document.querySelectorAll('.menu__link')
 
-    menuLinks.forEach(link => {
-        link.addEventListener('click', () => {
-            headerMenu.forEach(menu => {
-                menu.classList.remove('menu__list--active');
-            });
-            hamburger.classList.remove('menu__btn--open');
-        });
-    });
+      hamburger.addEventListener('click', () => {
+          headerMenu.forEach(menu => {
+              menu.classList.toggle('menu__list--active');
+          });
+          hamburger.classList.toggle('menu__btn--open');
+      });
 
-});
+      menuLinks.forEach(link => {
+          link.addEventListener('click', () => {
+              headerMenu.forEach(menu => {
+              menu.classList.remove('menu__list--active');
+              });
+              hamburger.classList.remove('menu__btn--open');
+          });
+      }); 
+     
+  });
+ 
